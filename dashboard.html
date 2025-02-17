@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>
+    <h2>Student Dashboard</h2>
+    <button id="logout-btn">Logout</button>
+  </nav>
+
+  <main>
+    <h3>Welcome, <span id="student-name"></span>!</h3>
+    <p>Email: <span id="student-email"></span></p>
+    <p>ID: <span id="student-id"></span></p>
+    <div class="profile-pic-container">
+      <img id="student-photo" src="" alt="Profile Photo" />
+    </div>
+
+    <h4>Update Profile:</h4>
+    <form id="update-profile-form">
+      <input type="text" id="update-name" placeholder="Enter new name" />
+      <input type="email" id="update-email" placeholder="Enter new email" />
+      <input type="password" id="update-password" placeholder="Enter new password" />
+      <input type="text" id="update-department" placeholder="Enter new department" />
+      <label for="update-profile-photo">Upload New Profile Picture:</label>
+      <input type="file" id="update-profile-photo" accept="image/*" />
+      <button type="submit">Update Profile</button>
+    </form>
+
+    <h4>Enrolled Courses:</h4>
+    <ul id="enrolled-courses">
+      <!-- Enrolled courses will be listed here -->
+    </ul>
+    <button id="enroll-courses-btn">Enroll in Courses</button>
+    <button id="view-announcements-btn">View Announcements</button>
+    <button id="view-exam-results-btn">View Exam Results</button>
+    <button id="view-calendar-btn">View Calendar</button>
+    <button id="submit-feedback-btn">Submit Feedback</button>
+    <!-- New button for Library -->
+    <button id="view-library-btn">View Library</button>
+  </main>
+
+  <footer>University Name &copy; 2025</footer>
+  <script src="app.js"></script>
+</body>
+</html>

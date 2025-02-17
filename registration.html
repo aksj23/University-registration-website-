@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Registration</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div>University Registration</div>
+        <button id="dark-mode-toggle">Dark Mode</button>
+    </nav>
+    
+    <main>
+        <h2>Student Registration</h2>
+
+        <form id="registration-form">
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <input type="text" id="student-id" placeholder="Enter your student ID" required>
+            <input type="password" id="password" placeholder="Enter your password" required>
+            
+            <label for="profile-photo">Profile Picture</label>
+            <input type="file" id="profile-photo" accept="image/*" required>
+            
+            <button type="submit">Register</button>
+        </form>
+
+        <p>Already have an account?  <a href="login.html">Login</a></p>
+    </main>
+
+    <footer>University Name &copy;  2025</footer>
+    <script src="registration.js"></script>
+</body>
+</html>
